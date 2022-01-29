@@ -1,3 +1,13 @@
+/* Custom properties */
+
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light-blue: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+}
+
+/* ---------- */
+
 /* Boxsizing */
 
 *,
@@ -61,4 +71,37 @@ body {
     padding: 0 2em;
     max-width: 80rem;
     margin: 0 auto;
+}
+
+.box {
+    padding: 3rem;
+    background: wheat;
+}
+
+/* --------- */
+
+/* colours */
+
+.bg-dark {
+    background-color: hsl( var(--clr-dark));
+}
+
+.bg-light-blue {
+    background-color:  hsl(var(--clr-light-blue));
+}
+
+.bg-white {
+    background-color: hsl(var(--clr-white));
+}
+
+.text-dark {
+    background-color: hsl(var(--clr-dark));
+}
+
+.text-light-blue {
+    background-color: hsl(var(--clr-light-blue));
+}
+
+.text-white {
+    background-color: hsl(var(--clr-white));
 }
