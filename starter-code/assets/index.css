@@ -51,6 +51,7 @@ select {
 /* ------- */
 
 body {
+    color: hsl(var(--clr-white));
     line-height: 1.5;
     min-height: 100vh;
 }
@@ -95,13 +96,17 @@ body {
 }
 
 .text-dark {
-    background-color: hsl(var(--clr-dark));
+    color: hsl(var(--clr-dark));
 }
 
 .text-light-blue {
-    background-color: hsl(var(--clr-light-blue));
+    color: hsl(var(--clr-light-blue));
 }
 
 .text-white {
-    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-white));
+}
+
+.alpha-text {
+    color: hsl(var(--clr-white) / .6);
 }
