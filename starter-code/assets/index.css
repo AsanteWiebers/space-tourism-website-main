@@ -234,11 +234,28 @@ p {
 /* Components */
 
 .large-button {
-
+    position: relative;
     display: grid;
     aspect-ratio: 1;   
     padding: 0 2em;
     place-items: center;
     text-decoration: none;
     border-radius: 50%;
+    z-index: 1;
+   
+}
+
+.large-button::after {
+    content: '';
+    position: absolute;
+    background: hsl(var(--clr-white) / .25);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.large-button:hover::after,
+.large-button:focus::after {
+    transform: scale(1.5); 
 }
