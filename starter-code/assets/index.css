@@ -97,8 +97,8 @@ p {
     gap: var(--gap, 1rem);
 }
 
-/* Select all but not the first child */
 
+/* Select all but not the first child */
 .flow > * + * {
     margin-top: var(--flow-space, 1rem);
 }
@@ -240,6 +240,7 @@ p {
 .large-button {
     position: relative;
     display: grid;
+    /* Sets width and height */
     aspect-ratio: 1;   
     padding: 0 2em;
     place-items: center;
@@ -261,6 +262,7 @@ p {
 
 .large-button:hover::after,
 .large-button:focus::after {
+    /* resize by 1.5 */
     transform: scale(1.5); 
 }
 
@@ -303,6 +305,25 @@ p {
 }
 
 .tab-list {
- --gap: 3em;
+/* undifined local custom property  */
+    --gap: 3rem;
 }
 
+.dot-indicators > * {
+    cursor: pointer;
+    border: 0;
+    /* Sets width and height */
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: .8em;
+    background-color: hsl(var(--clr-white) /.25);
+}
+
+.dot-indicators > *:hover,
+.dot-indicators > *:focus {
+   background-color: hsl(var(--clr-white) / .5);
+}
+
+.dot-indicators > .active {
+    background-color: hsl(var(--clr-white) / 1);
+}
