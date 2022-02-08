@@ -327,3 +327,24 @@ p {
 .dot-indicators > .active {
     background-color: hsl(var(--clr-white) / 1);
 }
+
+.number-indicators > * {
+    cursor: pointer;
+    color: hsl(var(--clr-white) / 1);
+    aspect-ratio:1;
+    border-radius: 50%;
+    background-color: hsl(var(--clr-dark));
+    border: 1px solid hsl(var(--clr-white) / .25);
+    padding: 1em;
+}
+
+.number-indicators > .active {
+    background-color: hsl(var(--clr-white) / 1);
+    color: hsl(var(--clr-dark));
+}
+
+.number-indicators > *:hover,
+.number-indicators > *:focus {
+    border: hsl(var(--clr-white) / 1);
+}
+
