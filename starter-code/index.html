@@ -12,21 +12,40 @@
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 
-<body>
-  <nav>
-    00 Home
-    01 Destination
-    02 Crew
-    03 Technology
-  </nav>
+<body class="bg-dark">
+  <header class="primary-header flex">
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to
-  outer space and not hover kind of on the edge of it. Well sit back, and relax
-  because we’ll give you a truly out of this world experience!
+    <div>
+      <img src="/starter-code/assets/shared/logo.svg" alt="logo">
+    </div>
+    <nav>
+      <ul style="--gap: 4rem;" class="ff-sans-cond primary-navigation underline-indicators flex">
+        <li class="active uppercase text-white"><a class="letter-spacing-2" href="#"><span>00</span></a>Home
+        </li>
+        <li class="uppercase text-white"><a class="letter-spacing-2" href="#"><span>01</span></a>Destination
+        </li>
+        <li class="uppercase text-white"><a class="letter-spacing-2" href="#"><span>02</span></a>Crew
+        </li>
+        <li class="uppercase text-white"><a class="letter-spacing-2" href="#"><span>03</span></a>Technology
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <h1 class="fs-500 ff-sans-cond letter-spacing-2 text-light-blue uppercase">
+      So, you want to travel to
+      <span class="fs-900 text-white">Space</span></h1>
 
-  Explore
+    <p> Let’s face it; if you want to go to space, you might as well genuinely go to
+      outer space and not hover kind of on the edge of it. Well sit back, and relax
+      because we’ll give you a truly out of this world experience!</p>
+  </div>
+  <div style="margin: 3rem;">
+    <!-- explore button -->
+    <a href="#" class="large-button bg-white ff-serif uppercase text-dark">Explore</a>
+    <!-- <p style="margin-top: 1rem;" class="text-light-blue">Landing Page Main Button - Idle</p> -->
+  </div>
+
 
 </body>
 

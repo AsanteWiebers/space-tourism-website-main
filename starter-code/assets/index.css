@@ -97,6 +97,10 @@ p {
     gap: var(--gap, 1rem);
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 2em minmax(0,40rem) minmax(0,40rem) 2em;
+}
 
 /* Select all but not the first child */
 .flow > * + * {
@@ -239,7 +243,7 @@ p {
 
 .large-button {
     position: relative;
-    display: grid;
+    display: inline-grid;
     /* Sets width and height */
     aspect-ratio: 1;   
     padding: 0 2em;
@@ -328,6 +332,8 @@ p {
     background-color: hsl(var(--clr-white) / 1);
 }
 
+
+
 .number-indicators > * {
     cursor: pointer;
     color: hsl(var(--clr-white) / 1);
@@ -336,6 +342,7 @@ p {
     background-color: hsl(var(--clr-dark));
     border: 1px solid hsl(var(--clr-white) / .25);
     padding: 1em;
+    
 }
 
 .number-indicators > .active {
@@ -345,6 +352,6 @@ p {
 
 .number-indicators > *:hover,
 .number-indicators > *:focus {
-    border: hsl(var(--clr-white) / 1);
+    border: 1px solid hsl(var(--clr-white));
 }
 
